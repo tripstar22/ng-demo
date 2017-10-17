@@ -1,0 +1,23 @@
+@import "../../../assets/scss/headings.scss";
+@import "../../../assets/scss/helpers.scss";
+@import "../../../assets/scss/vars.scss";
+
+.itemUser {
+    border-bottom: 1px solid $grayLight;
+    margin-top: 20px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    .titleUser {
+
+        a {
+            font-family: 'Cabin', sans-serif;
+        }
+    }
+}

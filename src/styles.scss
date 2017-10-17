@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+// import required for angular material
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto+Mono:300');
+// import vars
+@import "assets/scss/vars.scss";
+
+body {
+    background: $blueGrayLight;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 40px 0;
+}
+
+a {
+    color: $bluePacific;
+    text-decoration: none;
+
+    &:visited {
+        color: $bluePacific;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.wrap .listCards {
+    
+    .listItem {
+
+        // this element and class are injected by angular material
+        // not in my markup
+        // need to override angular material styles here
+        .mat-list-item-content {
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+

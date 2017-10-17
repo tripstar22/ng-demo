@@ -1,0 +1,12 @@
+@import "vars.scss";
+
+h1, h2 {
+    color: $black;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+h2 {
+   font-size: 1.125em;
+   margin-top: 0; 
+}

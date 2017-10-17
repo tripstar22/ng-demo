@@ -1,0 +1,62 @@
+@import "vars.scss";
+
+.listCards {
+
+    .listItem {
+        width: 100%;
+
+        @media (min-width: $screenMD) {
+            width: 50%;
+            float: left;
+        }
+    
+        @media (min-width: $screenMD) {
+            width: 50%;
+            float: left;
+            padding: 0 20px 0 0;
+    
+            &:nth-child(even) {
+                float: right;
+                padding: 0 0 0 20px;
+            }
+        }
+    
+        @media (min-width: $screenLG) {
+            width: 33.33333%;
+            float: left;
+    
+            &:nth-child(even) {
+                float: left;
+                padding: 0 20px 0 0;
+            }
+        }
+        
+        a {
+            width: 100%;
+            display: inline-block;
+            font-size: 1em;
+            font-family: 'Cabin', sans-serif;
+            font-weight: 400;
+        }
+    }
+}
+
+.itemHeader {
+
+    @media (min-width: $screenMD) {
+        min-height: 65px;
+    }
+
+    @media (min-width: $screenLG) {
+        min-height: 80px;
+    }
+}
+
+.itemTitle {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+.itemCard {
+    padding-top: 24px;
+}

@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="small-12 columns txtCenter">
+    <h1 id="albumName"></h1>
+  </div>
+</div><!-- /.row -->
+<div class="row wrap">
+  <div class="small-12 columns">
+    <mat-list class="listCards">
+      <mat-list-item class="listItem" *ngFor="let photo of arrayPhotos">
+        <mat-card class="itemCard txtCenter">
+          <a href="" (click)="openImg($event)">
+              <img mat-card-image class="imgThumbnail" src="{{photo.thumbnailUrl}}" id="{{photo.id}}">
+          </a>
+        </mat-card>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div><!-- /.row -->
+
+<!-- modal -->
+<div id="wrapModal" class="wrapModal hideMe">
+  <div id="gradientBg" class="gradientBg"></div>
+  <div class="modal">
+    <div class="modalCard">
+      <div class="modalHeading">
+        <h2 id="titlePhoto"></h2>
+      </div>
+      <div class="modalContent">
+        <img src="" alt="photo" id="imgPhoto" />
+      </div>
+      <div class="modalFooter txtCenter">
+          <a href="" class="btn" (click)="closeImg($event)">Close</a>
+      </div>
+    </div>
+  </div>
+</div>

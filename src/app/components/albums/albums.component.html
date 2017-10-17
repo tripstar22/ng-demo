@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="small-12 columns txtCenter">
+    <h1 id="username">User Albums</h1>
+  </div>
+</div><!-- /.row -->
+<div class="row wrap">
+  <div class="small-12 columns">
+    <mat-list class="listCards">
+      <mat-list-item class="listItem" *ngFor="let item of arrayAlbums">
+        <mat-card class="itemCard txtCenter">
+          <a class="linkAlbum">
+            <mat-card-header class="itemHeader">
+              <mat-card-title class="itemTitle">{{item.title}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image class="thumbnailFeatured">
+          </a>
+        </mat-card>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div><!-- /.row -->
