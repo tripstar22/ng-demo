@@ -21,7 +21,7 @@ export class AlbumDetailComponent implements OnInit {
   }
 
   albumDetailService() {
-    this._appHttpService.requestData('http://jsonplaceholder.typicode.com/photos')
+    this._appHttpService.requestData('https://jsonplaceholder.typicode.com/photos')
 		.subscribe(
 			data => {this.photos = data},
       error => console.log(error),

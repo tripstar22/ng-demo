@@ -16,7 +16,7 @@ export class UsersComponent implements OnInit {
   }
 
   usersService() {
-		this._appHttpService.requestData('http://jsonplaceholder.typicode.com/users')
+		this._appHttpService.requestData('https://jsonplaceholder.typicode.com/users')
 		.subscribe(
 			data => {this.users = data},
 			error => console.log(error),

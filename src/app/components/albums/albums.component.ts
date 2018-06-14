@@ -21,7 +21,7 @@ export class AlbumsComponent implements OnInit, AfterViewChecked {
   }
 
   albumService() {
-		this._appHttpService.requestData('http://jsonplaceholder.typicode.com/albums')
+		this._appHttpService.requestData('https://jsonplaceholder.typicode.com/albums')
 		.subscribe(
 			data => {this.albums = data},
       error => console.log(error),
@@ -30,7 +30,7 @@ export class AlbumsComponent implements OnInit, AfterViewChecked {
   }
 
   userService() {
-		this._appHttpService.requestData('http://jsonplaceholder.typicode.com/users')
+		this._appHttpService.requestData('https://jsonplaceholder.typicode.com/users')
 		.subscribe(
 			data => {this.users = data},
       error => console.log(error),
@@ -39,7 +39,7 @@ export class AlbumsComponent implements OnInit, AfterViewChecked {
   }
 
   photosService() {
-    this._appHttpService.requestData('http://jsonplaceholder.typicode.com/photos')
+    this._appHttpService.requestData('https://jsonplaceholder.typicode.com/photos')
 		.subscribe(
 			data => {this.photos = data},
       error => console.log(error),
